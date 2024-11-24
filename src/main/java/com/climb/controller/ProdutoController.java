@@ -16,7 +16,6 @@ import com.climb.model.Produto;
 @WebServlet(
 	name = 	"climb",
 	urlPatterns = {
-		"/",
 		"/cadastro",
 		"/catalogo",
 		"/carrinho",
@@ -101,7 +100,7 @@ public class ProdutoController extends HttpServlet{
     	
     	try {
     		switch(action) {
-				case "/":
+				case "/inicio":
 					RequestDispatcher dispatcher = request.getRequestDispatcher("views/inicio.jsp");
 					dispatcher.forward(request, response);
 					break;

@@ -14,14 +14,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climb - Especiais de Primavera</title>
-    <link href="${pageContext.request.contextPath}/css/inicio.css" rel="stylesheet" type="text/css" > 
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/inicio.css"> <!-- por algum motivo isso não funciona -->
     	<!--
     		isso não é saudavel
     		vai deixar a página muito mais pesada.
     		mas é a unica gambiarra q temos para carregar o css
     	-->
     <style>
-    	<%@ include file="../css/inicio.css" %>
+			<%@ include file="../css/inicio.css" %>
     </style>
 </head>
 <body>

@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catálogo</title>
-    <link rel="stylesheet" href="../css/catalago.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/catalago.css">
 </head>
 <body>
 	<jsp:include page="../includes/climb-header.jsp"></jsp:include>
