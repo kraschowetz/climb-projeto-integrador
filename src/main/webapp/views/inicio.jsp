@@ -14,20 +14,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climb - Especiais de Primavera</title>
-    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/inicio.css">
+    <link href="${pageContext.request.contextPath}/css/inicio.css" rel="stylesheet" type="text/css" > 
+    	<!--
+    		isso não é saudavel
+    		vai deixar a página muito mais pesada.
+    		mas é a unica gambiarra q temos para carregar o css
+    	-->
+    <style>
+    	<%@ include file="../css/inicio.css" %>
+    </style>
 </head>
 <body>
-	<jsp:include page="includes/climb-header.jsp"></jsp:include>
+	<jsp:include page="../includes/climb-header.jsp"></jsp:include>
     <div class="carousel-container">
         <div class="carousel">
             <div class="carousel-slide active">
-                <img src="res/inicio/inicio2.png" alt="Slide 1">
+                <img src="${pageContext.request.contextPath}/res/inicio/inicio2.png" alt="Slide 1">
             </div>
             <div class="carousel-slide">
-                <img src="res/inicio/inicio3.png" alt="Slide 2">
+                <img src="${pageContext.request.contextPath}/res/inicio/inicio3.png" alt="Slide 2">
             </div>
             <div class="carousel-slide">
-                <img src="res/inicio/inicio4.png" alt="Slide 3">
+                <img src="${pageContext.request.contextPath}/res/inicio/inicio4.png" alt="Slide 3">
             </div>
         </div>
         <button class="carousel-button prev" onclick="prevSlide()">❮</button>

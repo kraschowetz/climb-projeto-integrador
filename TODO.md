@@ -8,6 +8,8 @@
 - formatar css
 - remover duplicatas do css
 - fazer includes
+- imagens não carregam
+- css só é carregado com gambiarra
 
 #problemas com o back-end
 - decidir se e como armazenar imagens no código

@@ -102,7 +102,7 @@ public class ProdutoController extends HttpServlet{
     	try {
     		switch(action) {
 				case "/":
-					RequestDispatcher dispatcher = request.getRequestDispatcher("inicio.jsp");
+					RequestDispatcher dispatcher = request.getRequestDispatcher("views/inicio.jsp");
 					dispatcher.forward(request, response);
 					break;
 				case "cadastro":
