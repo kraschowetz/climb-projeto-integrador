@@ -88,12 +88,21 @@ body {
     gap: 10px;
 }
 
+/* returados do .jsp */
+.carousel-slide {
+	display: none;
+}
+.carousel-slide.active {
+	display: block;
+}
+/*----*/
+
 .indicator {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    cursor: pointer;
+width: 12px;
+height: 12px;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.5);
+cursor: pointer;
 }
 
 .indicator.active {

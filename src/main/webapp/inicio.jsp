@@ -14,29 +14,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Climb - Especiais de Primavera</title>
-    <link rel="stylesheet" href="../css/inicio.css">
-    <style>
-        /* Exemplo básico de CSS para ocultar e exibir o slide ativo */
-        .carousel-slide {
-            display: none;
-        }
-        .carousel-slide.active {
-            display: block;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/inicio.css">
 </head>
 <body>
-	<jsp:include page="../includes/climb-header.jsp"></jsp:include>
+	<jsp:include page="includes/climb-header.jsp"></jsp:include>
     <div class="carousel-container">
         <div class="carousel">
             <div class="carousel-slide active">
-                <img src="../res/inicio/inicio2.png" alt="Slide 1">
+                <img src="res/inicio/inicio2.png" alt="Slide 1">
             </div>
             <div class="carousel-slide">
-                <img src="../res/inicio/inicio3.png" alt="Slide 2">
+                <img src="res/inicio/inicio3.png" alt="Slide 2">
             </div>
             <div class="carousel-slide">
-                <img src="../res/inicio/inicio4.png" alt="Slide 3">
+                <img src="res/inicio/inicio4.png" alt="Slide 3">
             </div>
         </div>
         <button class="carousel-button prev" onclick="prevSlide()">❮</button>
@@ -131,7 +122,7 @@
           <span class="original-price">R$59,99</span>
           <span class="sale-price">R$39,99</span>
         </div>
-        <a href="entrega.jsp" class="product-button">Short de Verão</a>
+        <a href="views/entrega.jsp" class="product-button">Short de Verão</a>
       </div>
     </div>
   </div>
